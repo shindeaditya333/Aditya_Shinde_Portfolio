@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+
+# Virtual Environments
+
+.venv
+venv/
+venv.bak/
+env/
+ENV/
+.venv/
+
+# Environment variable files
+
+.env.*
+**/.env
+**/.env.*
+.env
+.envrc
+env.bak/
+
+
