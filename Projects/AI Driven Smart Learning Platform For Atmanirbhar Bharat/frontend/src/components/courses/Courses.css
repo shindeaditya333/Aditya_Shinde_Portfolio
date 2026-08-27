@@ -1,0 +1,128 @@
+.courses-page{
+    min-height:100vh;
+    background:#f4f7fb;
+    padding:40px;
+}
+
+.courses-header{
+    margin-bottom:40px;
+}
+
+.courses-header h1{
+    font-size:42px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.courses-header p{
+    color:#6b7280;
+    font-size:17px;
+}
+
+.loading,
+.no-courses{
+    text-align:center;
+    margin-top:50px;
+    font-size:22px;
+    color:#6b7280;
+}
+
+.courses-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+    transition:.3s;
+    border:1px solid #eef2f7;
+}
+
+.course-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(37,99,235,.12);
+}
+
+/* .course-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 12px 30px rgba(37,99,235,.15);
+} */
+
+.course-top{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:20px;
+}
+
+.course-top span{
+    background:#dbeafe;
+    color:#2563eb;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.course-card h2{
+    color:#111827;
+    margin:15px 0 10px;
+    font-size:30px;
+    font-weight:700;
+}
+
+.course-card p{
+    color:#6b7280;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+
+.course-meta{
+    display:flex;
+    gap:40px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.course-meta strong{
+    color:#111827;
+}
+
+.course-meta p{
+    margin-top:5px;
+    color:#6b7280;
+}
+
+.course-card button{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+    width:auto;
+}
+
+.course-card button:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+    .courses-page{
+        padding:20px;
+    }
+
+    .courses-header h1{
+        font-size:32px;
+    }
+
+}

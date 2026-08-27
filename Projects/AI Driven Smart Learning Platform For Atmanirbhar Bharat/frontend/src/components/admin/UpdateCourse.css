@@ -1,0 +1,60 @@
+.update-course{
+    min-height:100vh;
+    background:#f4f7fb;
+    padding:40px;
+}
+
+.course-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:25px;
+}
+
+.course-card{
+    background:white;
+    padding:20px;
+    border-radius:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+.course-card button{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.edit-form{
+    background:white;
+    margin-top:30px;
+    padding:25px;
+    border-radius:18px;
+}
+
+.edit-form h2{
+    margin-bottom:20px;
+}
+
+.edit-form input,
+.edit-form textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+}
+
+.save-btn{
+    border:none;
+    background:#16a34a;
+    color:white;
+    padding:14px 22px;
+    border-radius:12px;
+    cursor:pointer;
+}

@@ -1,0 +1,282 @@
+.user-dashboard{
+    min-height:100vh;
+    background:#f4f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.dashboard-navbar{
+    width:100%;
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    box-sizing:border-box;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.dashboard-logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.dashboard-search{
+    width:45%;
+    display:flex;
+    gap:12px;
+}
+
+.dashboard-search input{
+    flex:1;
+    padding:14px;
+    border:none;
+    background:#eef2ff;
+    border-radius:12px;
+    outline:none;
+    font-size:15px;
+}
+
+.dashboard-search button{
+    border:none;
+    padding:14px 22px;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.dashboard-search button:hover{
+    background:#1e4fd1;
+}
+
+.dashboard-icons{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    position:relative;
+}
+
+.notification-icon,
+.profile-icon{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#eef2ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:20px;
+}
+
+.notification-icon:hover,
+.profile-icon:hover{
+    background:#dbe5ff;
+}
+
+/* PROFILE MENU */
+
+.profile-dropdown{
+    position:absolute;
+    top:65px;
+    right:0;
+    width:180px;
+    background:white;
+    border-radius:14px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.1);
+    overflow:hidden;
+}
+
+.profile-dropdown p{
+    padding:15px;
+    cursor:pointer;
+    transition:0.3s;
+    margin:0;
+}
+
+.profile-dropdown p:hover{
+    background:#eef2ff;
+}
+
+/* HERO */
+
+.dashboard-hero{
+    padding:50px 60px 20px;
+}
+
+.dashboard-hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.dashboard-hero p{
+    color:#6b7280;
+    font-size:17px;
+}
+
+/* CATEGORY */
+
+.category-section{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    padding:20px 60px;
+}
+
+.category-btn{
+    border:none;
+    background:white;
+    padding:12px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    box-shadow:0 2px 8px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.category-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* VIDEOS */
+
+.videos-container{
+    padding:20px 60px 50px;
+}
+
+.videos-container h2{
+    margin-bottom:25px;
+    color:#111827;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.video-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.06);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.video-card:hover{
+    transform:translateY(-6px);
+}
+
+.video-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.video-content{
+    padding:18px;
+}
+
+.video-content h3{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.video-content p{
+    color:#6b7280;
+    margin-bottom:15px;
+}
+
+.video-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.video-bottom span{
+    background:#dbeafe;
+    color:#2563eb;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.video-bottom small{
+    color:#6b7280;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .dashboard-navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .dashboard-search{
+        width:100%;
+    }
+
+    .dashboard-hero,
+    .category-section,
+    .videos-container{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+}
+
+.no-data{
+    font-size:20px;
+    font-weight:600;
+    color:#666;
+    margin-top:20px;
+}
+
+.mode-toggle{
+    display:flex;
+    background:#eef2ff;
+    border-radius:30px;
+    padding:4px;
+    margin-right:10px;
+}
+
+.mode-toggle button{
+    border:none;
+    background:transparent;
+    padding:8px 16px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.mode-toggle button.active{
+    background:#2563eb;
+    color:white;
+}
+
+body{
+    overflow-y:auto !important;
+}
+
+html{
+    overflow-y:auto !important;
+}
