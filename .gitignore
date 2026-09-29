@@ -48,3 +48,18 @@ Resumes_chromadb/
 
 # ChromaDB
 Sunbeam_Courses_chromadb/
+
+
+# RecruitFlow specific
+RecruitFlow/**/node_modules/
+RecruitFlow/**/.env
+RecruitFlow/**/uploads/
+RecruitFlow/**/dist/
+RecruitFlow/**/build/
+
+# MongoDB / local database files
+*.db
+*.mongodb
+
+# Temporary files
+*.tmp
